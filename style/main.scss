@@ -1,0 +1,15 @@
+@use "../style/sass/helpers/mixins" as *;
+@import "../style/sass/pages/global";
+
+@import "../style/sass/helpers/variables";
+@import "../style/sass/components/buttons";
+@import "../style/sass/components/heading";
+
+@import "../style/sass/helpers/functions";
+@import "../style/sass/layout/grid";
+
+@import "../style/sass/layout/header";
+
+@import "../style/sass/pages/homepage";
+
+@import "../style//sass/layout/footer";

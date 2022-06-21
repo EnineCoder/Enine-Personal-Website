@@ -1,0 +1,35 @@
+.move-up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  display: none;
+}
+.move-up i {
+  background-color: #ffb727;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 0.2rem;
+  color: #fff;
+  transition: 0.5s;
+}
+.move-up i:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  background-color: $background-primary;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  opacity: 0.5;
+}

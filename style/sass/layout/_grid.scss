@@ -1,0 +1,81 @@
+* {
+  @include prefix(box-sizing, border-box, webkit moz o);
+}
+.container {
+  padding: {
+    left: 20px;
+    right: 20px;
+  }
+  margin: {
+    left: auto;
+    right: auto;
+  }
+
+  @include respensive(small) {
+    width: 750px;
+  }
+  @include respensive(meduim) {
+    width: 970px;
+  }
+  @include respensive(large) {
+    width: 1170px;
+  }
+}
+
+%flex-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5rem;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 0.5rem;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  gap: 1rem;
+}
+
+// Utilities
+@for $i from 1 to 10 {
+  .p-#{$i} {
+    padding: #{$i * 1rem};
+  }
+}
+@for $i from 1 to 10 {
+  .p-t-#{$i} {
+    padding-top: #{$i * 1rem};
+  }
+}
+@for $i from 1 to 10 {
+  .p-b-#{$i} {
+    padding-bottom: #{$i * 1rem};
+  }
+}
+@for $i from 1 to 10 {
+  .p-s-#{$i} {
+    padding-left: #{$i * 1rem};
+  }
+}
+@for $i from 1 to 10 {
+  .p-e-#{$i} {
+    padding-right: #{$i * 1rem};
+  }
+}
+@for $i from 1 to 10 {
+  .m-t-#{$i} {
+    margin-top: #{$i * 1rem};
+  }
+}
+@for $i from 1 to 10 {
+  .m-b-#{$i} {
+    margin-bottom: #{$i * 1rem};
+  }
+}
